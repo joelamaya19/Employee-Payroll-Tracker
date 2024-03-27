@@ -12,6 +12,7 @@ const collectEmployees = function () {
     let lastName = prompt("Enter Last Name");
     let salary = prompt("Enter Salary");
 
+    salary = parseInt(salary);
     const employee = {
       firstName: firstName,
       lastName: lastName,
@@ -38,7 +39,7 @@ const displayAverageSalary = function (employeesArray) {
     totalSalary+= employeesArray[x].salary;
     console.log(totalSalary);
   }
-  averageSalary = totalSalary/totalEmployees;
+  averageSalary = totalSalary / totalEmployees;
   console.log(`The average employee salary between our ${totalEmployees} employee(s) is ${averageSalary}`);
 }
 
