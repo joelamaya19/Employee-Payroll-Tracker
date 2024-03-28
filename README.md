@@ -23,7 +23,7 @@ Users can add employees to the table and display the information alphabetically 
 
     - The website randomly selects a lucky employee from the list and announces the winner in the console.
 
-![Animation shows input of employees to an employee payroll tracker.](./images/03-javascript-homework-demo.gif)(./images/03-javascript-homework-console-demo.png)
+![Animation shows input of employees to an employee payroll tracker.](./images/03-javascript-homework-demo.gif)
 
 ![Shows employee information in the console of an employee payroll tracker.](./images/03-javascript-homework-console-demo.png)
 
