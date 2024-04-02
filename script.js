@@ -15,6 +15,11 @@ const collectEmployees = function () {
 
     // Turns salary from string into an integer
     salary = parseFloat(salary);
+    if (!isNaN(salary)) {
+      salary = prompt(`Must be a number, re-enter salary.`);
+      salary = parseFloat(salary);
+    }
+
     const employee = {
       firstName: firstName,
       lastName: lastName,
