@@ -13,11 +13,19 @@ const collectEmployees = function () {
     let lastName = prompt("Enter Last Name");
     let salary = prompt("Enter Salary");
 
-    // Turns salary from string into an integer
-    salary = parseFloat(salary);
     if (!isNaN(salary)) {
-      salary = prompt(`Must be a number, re-enter salary.`);
+      salary = prompt(`Salary must be a number, please re-enter.`);
       salary = parseFloat(salary);
+    }
+    
+    // Validating lastName
+    if (!lastName.trim()) {
+      lastName = prompt(`Last Name cannot be empty, please re-enter.`);
+    }
+    
+    // Validating firstName
+    if (!firstName.trim()) {
+      firstName = prompt(`First Name cannot be empty, please re-enter.`);
     }
 
     const employee = {
